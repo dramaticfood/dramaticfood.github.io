@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style4.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+   <style>
+    
+        button{
+            padding: 10px;
+            float: right;
+            margin-right: -6px;
+        }
+       
+        input{
+            width: 50%;
+        }
+        .container{
+		border-bottom: 5px solid black;
+		}
+    </style>
+</head>
+<body>
+<div>
+ <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.jpg"  alt="" >
+            </a> 
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!--ml-auto flex sang bên phải -->
+				<ul class="navbar-nav ml-auto" style="color:white">
+                    
+					<li class="nav-item dropdown">
+						<a style="color:white" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./products.html">All</a></li>
+                            <li><a class="dropdown-item" href="#">Steak</a></li>
+                            <li><a class="dropdown-item" href="#">Spaghetti/ Pasta</a></li>
+                            <li><a class="dropdown-item" href="#">Salad</a></li>
+                            <li><a class="dropdown-item" href="#">Thức uống</a></li>
+                            <li><a class="dropdown-item" href="#">Tráng miệng</a></li>
+                          </ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./news.html" style="color:white">Tin tức </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./index.html" style="color:white">Thông tin</a>
+					</li>
+					
+					<li class="nav-item">
+						<a class="nav-link" href="./Form.html" style="color:white">Liên hệ  </a>
+					</li>
+                    
+				</ul>
+			</div>
+		</div>
+	</nav>
+  </div>
+  <div class="jumbotron text-center" style="background-color:#333333">
+  <h1></h1>
+  <p></p> 
+</div>
+<div class="container" >
+  <div class="row" style=" font-size: 17px">
+    <div class="col-sm-6">
+	
+      <h1><strong>DRAMATIC</strong></h1>
+	  <p><b>Hotline:(+84 28) 38 632 052</b>
+	  <p><em>Địa chỉ: </em>828 Sư Vạn Hạnh, Phường 13,Quận 10, TP.HCM</p>
+	  <p><em>Số điện thoại:</em> (+84 28) 38 632 052 – 38 629 232</p>
+	  <p> <em>Email:</em></span>		       contact@huflit.edu.vn</P>
+	  <p><em>Website:</em></span>  dramaticfood.com</p>
+      <h1>Founder:</h1>
+      <p>CHÂU GIA BẢO </p>
+      <p>QUÁCH HỮU LUÂN </p>
+      <p>LÊ NGUYỄN BẢO CHÂU </p>
+      <p>THANG VĨNH KIỆT</p>
+    </div>
+	
+   
+    <div class="col-sm-6" style=" font-size: 20px">
+      <form action="" method="get" accept-charset="utf-8" style="width:600px;margin:0px right;" id="formDemo">
+            <fieldset>
+                <h2 style="font-size:30px; font-weight:700">Liên hệ</h2>
+                <div>
+                    <em>Họ:</em><br/>
+                    <input  type="text" name="FamilyName" placeholder="Nguyễn" required>
+                </div>
+                <div>
+                    <em>Tên:</em><br/>
+                    <input  type="text" name="FirstName" placeholder="Văn A" required>
+                </div>
+                <div>
+                    <em>Số điện thoại:</em><br/>
+                    <input  type="text" name="Address" placeholder="0 9 0 x x x" required>
+                </div>
+                <div>
+                    <em>Nội dung bạn muốn gửi :</em> <br/>
+                    <input  type="text" name="Noidung" placeholder="Nhập tại đây . . ." style="height: 100px; width: 100%;" required>
+                </div>
+
+                <button  type="submit" style="background-color:black ; color:white ; margin:2rem;">Gửi</button>
+            </fieldset>
+    </form>
+    </div>
+  </div>
+</div>
+ 
+ <br>
+<p><h1 style="text-align:center">Bản đồ</h1></p></br>
+
+
+	
+
+
+<!-- javascript -->
+    <script type="text/javascript" style="color:red;">  
+        $(document).ready(function(){
+
+            $("#formDemo").validate({
+                rules:{
+                    FamilyName:"required",
+                    FirstName:"required",
+                    Noidung:{
+                        required:true,
+                        minlength:100
+                    },
+                    Address:{
+                        required:true,
+                        minlength:10
+                    }
+                },
+                messages:{
+                    FamilyName:"Vui lòng nhập họ ?",
+                    FirstName:"Vui lòng nhập tên ?",
+                    Address:{
+                        required:"Vui lòng nhập số điện thoại ?",
+                        minlength:"Nhập số điện thoại sai !!!!!!"
+                    },
+                    Noidung:{
+                            required:"Vui lòng nhập nội dung bạn muốn gửi?",
+                            minlength:"Nội dung tối thiểu 100 kí tự !!"
+                    }
+                }
+            });
+        });
+    </script>
+
+     
+        <div id="map" style="width:100%;height:500px;text-align:center">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.463577157205!2d106.66530011458903!3d10.775762592321945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f9023a3a85d%3A0xdee5c99a7b02feab!2sHuflit!5e0!3m2!1svi!2s!4v1638245156598!5m2!1svi!2s" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+		
+		
+<script src="https://code.jquery.com/jquery-1.11.1.min.js">										</script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js">			</script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js">		</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" >	</script>
+
+</body>
+
+<footer>
+    <div class="footer-1">
+        <h4>DRAMTIC &copy; 2021</h4>
+
+        <ul>
+        
+            <li><a href="#"><img src="./img/youtube-symbol 1.svg" alt="youtube-social-media"></a></li>
+            <li><a href="#"><img src="./img/twitter 1.svg" alt="twitter-social-media"></a></li>
+            <li><a href="#"><img src="./img/instagram 1.svg" alt="instargram-social-media"></a></li>
+        
+        
+        </ul>
+    </div>
+    <hr>
+    <!--1 đường line kẻ ngang từ đầu đến cuối màn hình -->
+    <p class="copyright">Copyright 2021 - Easy Tutorials</p>
+</footer>
+
+
+</html>

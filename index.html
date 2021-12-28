@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Homepage design with Bootstrap 4 and Animate css</title>
+	<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.jpg"  alt="" > <!--KHI MUỐN SHARE ZIP CODE , MUỐN CHO NGTA XEM HÌNH THÌ PHẢI CHO DẤU .(CHẤM) rồi mới / đường link => thì mới hiện ảnh  -->
+            </a> 
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!--ml-auto flex sang bên phải -->
+				<ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+						<a class="nav-link" href="#introduce"  >Thông tin</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sản phẩm 
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./products.html">All</a></li>
+                            <li><a class="dropdown-item" href="#">Steak</a></li>
+                            <li><a class="dropdown-item" href="#">Spaghetti/ Pasta</a></li>
+                            <li><a class="dropdown-item" href="#"">Salad</a></li>
+                            <li><a class="dropdown-item" href="#">Thức uống</a></li>
+                            <li><a class="dropdown-item" href="#">Tráng miệng</a></li>
+                          </ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="./news.html">Tin tức</a>
+                        
+					</li>
+					
+					
+					<li class="nav-item">
+						<a class="nav-link" href="./Form.html">Liên hệ </a>
+					</li>
+                    <!-- <div class="icon">
+                        <img src="" alt="" >
+                    </div> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="carousel slide" data-ride="carousel" id="carouselExampleIndicators">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="1" data-target="#carouselExampleIndicators"></li>
+			<li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="3" data-target="#carouselExampleIndicators"></li>
+            <li data-slide-to="4" data-target="#carouselExampleIndicators"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img alt="First slide" class="d-block w-100" src="./img/slideshow-13.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">Today Hot Dishes</h5>
+					<p class="animated bounceInLeft" style="animation-delay: 2s">European steak world for Vietnamese people</p>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Second slide" class="d-block w-100" src="./img/slideshow-14.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated slideInDown" style="animation-delay: 1s">Once you pop, you can’t stop</h5>
+					
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="./img/slideshow-12.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">It’s finger lickin’ good</h5>
+					
+					<p class="animated zoomIn" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+
+            <div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="./img/slideshow-8.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated bounceInRight" style="animation-delay: 1s">Real taste from real fruit</h5>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+
+            <div class="carousel-item">
+				<img alt="Third slide" class="d-block w-100" src="./img/slideshow-10.jpg">
+				<div class="carousel-caption d-none d-md-block">
+					<h5 class="animated zoomIn" style="animation-delay: 1s">Good to the last drop!</h5>
+					<p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">More Info</a></p>
+				</div>
+			</div>
+
+           
+
+		</div><a class="carousel-control-prev" data-slide="prev" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleIndicators" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+	
+    </div>
+
+
+    <section class="hot-new">
+        
+            <h2>Hot News</h2>
+            <div class="row">
+                <div class="col-2">
+                    <img src="./img/hotnew1.jpg" alt="">
+                    <div class="col-2-text">
+                        <h4>Cách lựa chọn thịt bò<br> mỹ ngon và chuẩn</h4>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <img src="./img/hotnew8.jpg" alt="">
+                    <div class="col-2-text">
+                        <h4>Cách chọn phần thịt<br> cho steak đạt chuẩn tại Dramatic</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <img src="./img/hotnew3.jpg" alt="">
+                    <div class="col-2-text">
+                        <h4>Ăn 1 tặng 1 mừng Giáng sinh</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <img src="./img/hotnew4.jpg" alt="">
+                    <div class="col-2-text">
+                        <h4>Tri ân khách hàng</h4>
+                    </div>
+                </div>
+
+
+                <div class="col-2">
+                    <img src="./img/hotnew9.jpg" alt="">
+                    <div class="col-2-text">
+                        <h4>Philly Cheese <br> Steak Soup</h4>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+
+
+
+
+    <section class="hot-product">
+        <div class="small-container">
+            <h2>Hot Products</h2>
+            <div class="row">
+                <div class="col-3">
+                    <img src="./img/product1.jpg" alt="">
+                    <div class="col-3-text">
+                        <h4>Beef Stack</h4>
+                        <p>250.000vnđ</p>
+                    </div>
+                </div>
+
+
+                <div class="col-3">
+                    <img src="./img/product5.jpg" alt="">
+                    <div class="col-3-text">
+                        <h4>Pasta Cream Sauce Recipe </h4>                        
+                        <p>180.000vnđ</p>
+                    </div>
+                </div>
+
+
+                <div class="col-3">
+                    <img src="./img/product7.jpg" alt="">
+                    <div class="col-3-text">
+                        <h4>Hamburger portion for 1 person                        </h4>
+                        <p>120.000vnđ</p>
+                    </div>
+                </div>
+
+
+                <div class="col-3">
+                    <img src="./img/product3.jpg" alt="">
+                    <div class="col-3-text">
+                        <h4>Hamburger portion for 2 people
+                        </h4>
+                        <p>200.000vnđ</p>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <img src="./img/product9.jpg" alt="">
+                    <div class="col-3-text">
+                        <h4>Fruit soda </h4>
+                        <p>50.000vnđ</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+    <section id="introduce">
+        <div class="col-4-img">
+            <img class="introduce-img" src="./img/introduce2.jpg" alt="">
+        </div>
+
+        <div class="col-4-text">
+            <h2>Story of Dramatic </h2>
+            <h3>1. Khởi nguồn thương hiệu    :        </h3>
+            <p>Ẩm thực phương Tây vô cùng phong phú và hấp dẫn về thị giác nên đã chiếm được cảm tình của rất nhiều thực khách Việt. Tại Sài Gòn, bạn có thể dễ dàng khám phá nét tinh tế và hấp dẫn của ẩm thực Âu ngay tại Dramatic. Đến với Dramatic, những món Âu sang trọng cũng trở nên bình dị và gần gũi với mọi thực khách Việt.</p>
+            <h3> 2. Tiêu chuẩn tạo nên chất lượng:</h3>
+            <p>Các nguyên liệu ở đây đều được lựa chọn kỹ lưỡng từ những nguồn uy tín, đảm bảo các yêu cầu về an toàn vệ sinh thực phẩm. Công thức tẩm ướp từ các loại gia vị độc đáo, mang đậm phong cách ẩm thực Châu Âu tạo nên hương vị độc đáo khó quên. Từng thớ thịt mềm, thấm đều, dậy mùi thơm hòa quyện với vị đậm đà của nước sốt, chút thanh đạm của salad, cà chua, ... hứa hẹn sẽ mang đến cho bạn những trải nghiệm ẩm thực phong phú và tuyệt vời. tuyệt vời. Và đặc biệt, món bít tết sẽ kém phần hấp dẫn nếu thiếu đi lớp bánh mì thơm mềm giúp bạn no bụng và đầy đủ hương vị.</p>
+            
+        </div>
+    </section> 
+
+    <footer>
+            <div class="footer-1">
+                <h4>DRAMTIC &copy; 2021</h4>
+        
+                <ul>
+                
+                    <li><a href="#"><img src="./img/youtube-symbol 1.svg" alt="youtube-social-media"></a></li>
+                    <li><a href="#"><img src="./img/twitter 1.svg" alt="twitter-social-media"></a></li>
+                    <li><a href="#"><img src="./img/instagram 1.svg" alt="instargram-social-media"></a></li>
+                
+                
+                </ul>
+            </div>
+            <hr>
+            <!--1 đường line kẻ ngang từ đầu đến cuối màn hình -->
+            <p class="copyright">Copyright 2021 - Easy Tutorials</p>
+    </footer>
+
+
+
+
+    <!--link này để sử dụng slideshow-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+</body>
+</html>
